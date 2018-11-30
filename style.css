@@ -1,0 +1,70 @@
+#container { width: 500px; height:500px; position: relative;}
+.box {
+     width: 100px;
+     height: 100px;
+     background-color: red;
+     font-size: 20px;
+     position:absolute;
+     padding: 5px;
+     }
+   .ex01 .box {
+      left: 10px;
+      top: 10px;
+      }
+    .ex02 .box {
+      left: 10px;
+      top: 130px;
+      }
+     .ex03 .box {
+        left: 10px;
+        top: 250px;
+        }
+        .ex04 .box {
+            left: 10px;
+            top: 370px;
+        }
+	
+	.ex03, .ex01{
+    position: relative;
+    animation-name: baja1;
+    animation-duration: 3s;    
+    animation-fill-mode: forwards;
+}
+		.ex04, .ex02{
+    position: relative;
+    animation-name: sube1 ;
+    animation-duration: 2s;    
+    animation-fill-mode: forwards;
+}
+	
+	@keyframes exercise2{
+    0% {
+		font-size:20px; 
+		color: black;
+		background-color: red;
+        transform: rotate(0deg);
+		}
+    100% {
+		color: yellow;
+		background-color: blue;
+        transform: rotate(270deg);
+    }
+}
+	.box{
+	font-size:18px; 
+    animation-name: exercise2 ;
+    animation-duration: 10s;    
+    animation-fill-mode: forwards;
+}
+	
+
+
+
+@keyframes baja1{
+    from {top: 0px;}
+    to {top: 120px;}
+}
+	@keyframes sube1{
+    from {top: 0px;}
+    to {top: -120px;}
+}
